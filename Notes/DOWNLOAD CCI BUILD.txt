@@ -1,3 +1,0 @@
-DOWNLOAD CCI BUILD:
-
-scp -o ProxyJump=root@172.16.10.54:2425,sshmobi@41.1.4.4 enggs@41.1.2.37:/software/ivr/bins/cciBE.tar.gz F://maddy
