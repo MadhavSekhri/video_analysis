@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+openai
+transformers
+requests
+pymongo
+whisper
+torch
+opencv-python
+yolov5
+aws-sdk
+openai
+requests
+pydub
+

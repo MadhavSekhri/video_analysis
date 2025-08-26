@@ -1,0 +1,60 @@
+K&C SIGNATURE
+
+
+import javax.crypto.Mac;
+
+import javax.crypto.spec.SecretKeySpec;
+
+import java.nio.charset.StandardCharsets;
+ 
+public class HmacSha256Generator {
+ 
+    public static String hmacSha256Hex(String secret, String message) throws Exception {
+
+        Mac sha256_HMAC = Mac.getInstance("HmacSHA256");
+
+        SecretKeySpec secretKey = new SecretKeySpec(secret.getBytes(StandardCharsets.UTF_8), "HmacSHA256");
+
+        sha256_HMAC.init(secretKey);
+ 
+        byte[] hash = sha256_HMAC.doFinal(message.getBytes(StandardCharsets.UTF_8));
+ 
+        // Convert to lowercase hex
+
+        StringBuilder hexString = new StringBuilder();
+
+        for (byte b : hash) {
+
+            String hex = Integer.toHexString(0xff & b);
+
+            if (hex.length() == 1) hexString.append('0');
+
+            hexString.append(hex);
+
+        }
+ 
+        return hexString.toString();
+
+    }
+ 
+    public static void main(String[] args) throws Exception {
+
+        String message = "ApiKey=tW2AgserhFu39wjSlWZ1seTLgIQ6ri2j&ApiSecret=Kh2vZQMM2WpexgsTFJxAgWRymr%2f2m696pPvCgrDOIbQk8Ez%2fb8FaUrp7ojFBlI2p&ApplicationId=237&CountryId=247&OperatorId=28&CpId=99&MSISDN=971504615118&Timestamp=4%2F11%2F2025+7%3A59%3A14+AM&Lang=EN&ShortCode=1111&Method=RequestPinCode";
+ 
+        String secret = "Kh2vZQMM2WpexgsTFJxAgWRymr/2m696pPvCgrDOIbQk8Ez/b8FaUrp7ojFBlI2p";
+ 
+        String signature = hmacSha256Hex(secret, message);
+
+        System.out.println("Signature: " + signature);
+
+    }
+
+}
+
+
+Decrypted Signature-K&C SendPincode Request:ApiKey=tW2AgserhFu39wjSlWZ1seTLgIQ6ri2j&ApiSecret=Kh2vZQMM2WpexgsTFJxAgWRymr%2f2m696pPvCgrDOIbQk8Ez%2fb8FaUrp7ojFBlI2p&ApplicationId=237&CountryId=247&OperatorId=28&CpId=99&MSISDN=971504615118&Timestamp=4%2F16%2F2025+12%3A08%3A23+PM&Lang=EN&ShortCode=1111&Method=RequestPinCode
+Generated Signature: 8d5995cbd6b04655f608486acb346d71c3f2869ac190eead2b9be642518074c0
+
+
+  this is the code that they have used and got correct signature this is the signature: ef2a1efc3338ab12648fb4a33b67816f43d815e038fc4fb6b34a81719f5b18de 
+ef2a1efc3338ab12648fb4a33b67816f43d815e038fc4fb6b34a81719f5b18de

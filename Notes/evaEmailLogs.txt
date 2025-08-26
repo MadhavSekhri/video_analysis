@@ -1,0 +1,17 @@
+--
+{"timeStamp":"2024-12-24 11:23:28.451",message":"TryEva Email not sent to user - low company strength", "email":"Maryse@blackngreen.com", "demoLinkStatus":"Not sent", "demoLink":""}
+--
+{"timeStamp":"2024-12-24 11:39:48.745","message":"TryEva Email sent to user", "email":"maryse@google.com", "demoLinkStatus":"sent", "demoLink":"https://tryeva.ai/al/QZ19A/"}
+--
+{"timeStamp":"2024-12-26 12:22:07.726","message":"TryEva Email not sent to user - low company strength", "email":"piyush.tayde@blackngreen.com", "demoLinkStatus":"Not sent", "demoLink":""}
+--
+{"timeStamp":"2024-12-26 12:22:35.218","message":"TryEva Email not sent to user - low company strength", "email":"piyush@bng.com", "demoLinkStatus":"Not sent", "demoLink":""}
+--
+{"timeStamp":"2024-12-26 12:23:11.193","message":"TryEva Email sent to user", "email":"b@ggmail.com", "demoLinkStatus":"sent", "demoLink":"https://tryeva.ai/al/QZ19A/"}
+--
+{"timeStamp":"2024-12-27 03:19:26.982","message":"TryEva Email not sent to user - low company strength", "email":"rahul@blackngreen.com", "demoLinkStatus":"Not sent", "demoLink":""}
+--
+{"timeStamp":"2024-12-27 03:20:06.806","message":"TryEva Email not sent to user - low company strength", "email":"Rahul@airtel.com", "demoLinkStatus":"Not sent", "demoLink":""}
+--
+{"timeStamp":"2024-12-27 05:31:52.415","message":"TryEva Email not sent to user - low company strength", "email":"n@airtel.com", "demoLinkStatus":"Not sent", "demoLink":""}
+--

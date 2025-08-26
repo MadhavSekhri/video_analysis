@@ -1,0 +1,69 @@
+CCI COMMANDS & FLOW
+
+
+SHOW TABLES;
+
+DESCRIBE Operator;
+
+SELECT COUNT(*) FROM user_role_group_mapping;
+
+SELECT * FROM Operator ORDER BY createdOn DESC LIMIT 10;
+
+
+mysql>
+mysql> SELECT * FROM users_activity ORDER BY last_login DESC LIMIT 10;
++------------+---------+-----------+--------------+------+----------+-----------+-------------+
+| operatorId | country | createdOn | operatorName | sync | timezone | updatedOn | countryCode |
++------------+---------+-----------+--------------+------+----------+-----------+-------------+
+|          6 | ZMB     | NULL      | MTN          |    1 | +00:00   | NULL      | 260         |
+|          5 | CM      | NULL      | ORG          |    1 | +00:00   | NULL      | 237         |
+|          4 | EVA     | NULL      | CALL         |    1 | +00:00   | NULL      | 123         |
+|          3 | UG      | NULL      | MTN          |    1 | +00:00   | NULL      | 256         |
+|          2 | SA      | NULL      | CLC          |    1 | +00:00   | NULL      | 278         |
+|          1 | AFG     | NULL      | AWCC         |    1 | +04:30   | NULL      | 93          |
++------------+---------+-----------+--------------+------+----------+-----------+-------------+
+
++------------+---------+---
+| user_profile_management | 29      CREATE CREDENTIALS
+| user_role               | 47      IF NEED TO ADD COMPLETELY NEW FEATURE IN CCI
+| user_role_group         | 3       ADMIN SUPERADMIN MEMBER
+| user_role_group_mapping | 29	    AFTER NEW FEATURE LAUNCH(NEED TO ADD FOR ALL ROLES ENTRY HERE)
+| users_activity          | 7000    ALL LOGS AND TRACKING
++-------------------------+
+
+PENDING:
+-user_profile_management -> CREATE CREDENTIALS
+-SUBSCRIPTION URLS CHANGE
+-DND URL IF ANY
+
+
+packs=http://41.1.2.123:9074/Subs_Engine/getPacks?type=subscription
+subUnsubLogs=http://127.0.0.1:8293/ServiceWrapper/getSubUnsubInfo?
+userDetails=http://41.1.2.123:9074/Subs_Engine/checkSubscription?
+subscribe=http://127.0.0.1:9070/Subs_Engine/subscription/sync?
+unsubscribe=http://127.0.0.1:9070/Subs_Engine/unSubscription/sync?
+
+callLogs=http://127.0.0.1:8293/ServiceWrapper/getIvrHistory?
+setDndSubs=http://127.0.0.1:8293/ServiceWrapper/addToBlacklist?
+removeDndSubs=http://127.0.0.1:8293/ServiceWrapper/removeFromBlacklist?
+checkSubsDnd=http://127.0.0.1:8293/ServiceWrapper/checkForBlacklist?
+setDndCall=http://127.0.0.1:8293/ServiceWrapper/block/
+removeDndCall=http://127.0.0.1:8293/ServiceWrapper/unblock/
+checkCallDnd=http://127.0.0.1:8293/ServiceWrapper/checkStatus/
+
+
+bulksetDndSubs=http://127.0.0.1:8293/ServiceWrapper/bulkDndSub
+bulksetDndCall=http://127.0.0.1:8293/ServiceWrapper/bulkDND
+
+
+checkSubsDndSubsSide=http://41.1.2.37:9072/Subs_Engine/checkBlacklist?
+setDndSubsSide=http://41.1.2.37:9072/Subs_Engine/addToBlacklist?
+removeDndSubsSide=http://41.1.2.37:9072/Subs_Engine/removeFromBlacklist?
+bulksetDndSubsUrlSubsSide=http://41.1.2.37:9072/Subs_Engine/addToBlacklist
+
+
+
+
+
+
+

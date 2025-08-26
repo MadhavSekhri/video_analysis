@@ -1,0 +1,3 @@
+IVA FLOW DISCUSSION Parking,Grace -> lowbalance
+Subtimeleft==0 AND currectStatus=active -> Out of minutes screen
+Plan Expired Screen-> Only validity to be checked

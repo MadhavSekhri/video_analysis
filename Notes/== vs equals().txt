@@ -1,0 +1,228 @@
+== vs equals()
+String str1 = new String("Hey !) -278128
+String str2 = new String("Hey !) -989009
+
+return str1==str2; //false
+
+
+return str1.equals(str2); //return true
+
+
+INHERITANCE(code reusability):
+class Animal
+{
+System.out.println("I am the Animal");
+}
+
+class Dog extends Animal
+{
+System.out.println("I can bark");
+}
+
+Encapsulation(Data security):
+class Employee
+{
+private String name; /hidden from outside 
+private int salary;
+
+public String getName()
+{
+return name;
+}
+public void setName(String newName)
+{
+this.name=newName;
+}
+
+
+public class Main
+{
+public static void main(String[] args)
+{
+Employee emp= new Employee();
+emp.setName("Madhav");
+System.out.println(emp.getName());
+}
+}
+
+Polymorphism (same thing, different behavior)
+
+class Calculator
+{
+int add (int a, int b)
+{
+return a+b;
+}
+
+double add (int a, int b)
+{
+return a+b;
+}
+
+}
+
+public static void main(String[] args)
+{
+Calculator calc = new Calculator();
+system.out.println(calc.add(5,4));//returns 9
+system.out.println(calc.add(5.1,4.1)); //returns 9.2
+}
+
+
+class Animal
+{
+void sound()
+{System.out.println("Animal making sound)";
+}
+}
+
+class Dog extends Animal
+{
+   @Override
+   void sound()
+{
+        System.out.println("Dog barks");
+
+}
+
+}
+
+public static void main(String[] args)
+{
+Animal animal = new Dog();
+animal.sound(); //Dog barks
+}
+
+
+abstract class Vehicle{
+abstract void sound();
+}
+
+class car extends Vehicle
+{
+@override
+void sound(){
+}
+}
+
+
+
+3 type of dependency injection
+-constructor based
+
+@Component
+public class Car
+{
+private final Engine engine;
+
+@Autowired
+public Car(Engine engine)
+{
+this.engine=engine;
+}
+
+public void start()
+{
+engine.run();
+}
+}
+
+public class Engine
+{
+public void run()
+{
+System.out.println("test");
+}
+}
+
+
+2. Setter based dependency Injection
+
+
+@Component
+public class Car
+{
+
+private final Engine engine;
+
+@Autowired
+public void setEngine (Engine engine)
+{
+this.engine=engine;
+}
+
+public void start()
+{
+engine.run();
+}
+
+}
+
+@Component
+public Class Engine
+{
+public void run()
+{
+system.out.println("This is working");
+}
+}
+
+
+
+
+
+Field based DI
+
+@Component
+public class Car
+{
+
+@Autowired
+private Engine engine;
+
+public void start()
+{
+engine.run();
+}
+}
+
+
+public class Engine
+{
+public void  run()
+{
+System.out.println("this is running");
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

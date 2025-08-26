@@ -1,0 +1,14 @@
+# Ignore large media files
+*.mp4
+*.avi
+*.mkv
+
+# Ignore sample and static folders
+sample/
+static/
+
+# Python stuff
+__pycache__/
+*.log
+.env
+*.pyc

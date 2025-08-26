@@ -1,0 +1,34 @@
+ECOM WEBSITE SIDEMENU
+Side Menu Bar
+
+-Orders
+   --Create New Order
+   --Update New Order
+-Inventory
+   --All Products
+   --List New Inventory
+   --Update Existing Inventory
+   --Platform Specific Excel
+-Pending Actions
+   --Under QC
+   --Pending Bill uploads
+-Media
+   --Bills & Invoices
+   --Raw Model Photos
+   --Raw Product Photos
+-Configuration
+    -Profile Settings
+        -GST Details
+  	-Platform Credentials
+        -Care Instructions
+        -Your Relational Manager
+    -Vendors & Suppliers
+    -Plan Validity
+-Help & Support
+   -Raise Ticket
+   -Request a Callback
+   -Book Google Meet slot
+   
+
+
+    

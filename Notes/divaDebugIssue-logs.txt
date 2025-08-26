@@ -1,0 +1,47 @@
+2024-12-20 05:43:30.449 [{mcc=418, u=Telecubes, productId=8000975, p=Du-88_YQq, mx=9649830983293, params=[{key=amount, value=240}, {key=frequency, value=day}, {key=language, value=ar}, {key=description, value=Diva}], mnc=20}] 
+
+2024-12-20 05:43:31.052 [{reason=ﻒﺸﻟ ﻒﻳ ﺇﺮﺳﺎﻟ OTP, status=failed}]
+
+
+2024-12-20 06:31:58.910 http://mobibattle-sdp-lb-355918994.ap-south-1.elb.amazonaws.com:9072/Subs_Engine/checkSubscription?msisdn=9647830475808&serviceId=zan_inf_iq_diva&cpId=100&country=IQ&operator=ZAN_INF
+
+2024-12-20 06:31:58.933 [{status=success, reason=, currentStatus=grace, validity=2024-12-20}]
+
+
+
+
+
+
+
+2024-12-20 06:32:04.168 [{mcc=418, u=Telecubes, p=Du-88_YQq, mx=9647830475808, params=[{key=PIN, value=9874}, {key=PTSubscriberID, value=FAfIS4iEzm2EWkY38PzDTjBN2ihRAF}], mnc=20, sid=8000975}] 
+
+Received response from operator: {status=Error, description=35 - The PIN entered does not match the generated PIN, sid=8000975, mx=9647830475808, mcc=418, mnc=20, user={subscribed=null, suspended=null}, txid=null, conf={status=null, description=null, portedMcc=null, portedMnc=null}}
+Response from verifyOtp service: {reason=ﻊﻓﻭﺍً! OTP ﻻ ﻲﺘﻃﺎﺒﻗ, status=failed}
+
+
+
+
+2024-12-20 06:33:22.377 [{mcc=418, u=Telecubes, p=Du-88_YQq, mx=9647830475808, params=[{key=PIN, value=3493}, {key=PTSubscriberID, value=3JzHdr0L0cWh9ItLuOej4oouCH1KzC}], mnc=20, sid=8000975}] 
+
+Received response from operator: {status=Error, description=35 - The PIN entered does not match the generated PIN, sid=8000975, mx=9647830475808, mcc=418, mnc=20, user={subscribed=null, suspended=null}, txid=null, conf={status=null, description=null, portedMcc=null, portedMnc=null}}
+Response from verifyOtp service: {reason=ﻊﻓﻭﺍً! OTP ﻻ ﻲﺘﻃﺎﺒﻗ, status=failed}
+
+
+
+
+2024-12-20 06:33:26.617 [{mcc=418, u=Telecubes, p=Du-88_YQq, mx=9647830475808, params=[{key=PIN, value=3493}, {key=PTSubscriberID, value=3JzHdr0L0cWh9ItLuOej4oouCH1KzC}], mnc=20, sid=8000975}] 
+Received response from operator: {status=Error, description=35 - The PIN entered does not match the generated PIN, sid=8000975, mx=9647830475808, mcc=418, mnc=20, user={subscribed=null, suspended=null}, txid=null, conf={status=null, description=null, portedMcc=null, portedMnc=null}}
+Response from verifyOtp service: {reason=ﻊﻓﻭﺍً! OTP ﻻ ﻲﺘﻃﺎﺒﻗ, status=failed}
+
+
+2024-12-20 06:33:27.848 [{mcc=418, u=Telecubes, p=Du-88_YQq, mx=9647830475808, params=[{key=PIN, value=3493}, {key=PTSubscriberID, value=3JzHdr0L0cWh9ItLuOej4oouCH1KzC}], mnc=20, sid=8000975}] 
+Received response from operator: {status=Error, description=49 - PIN has expired, sid=8000975, mx=9647830475808, mcc=418, mnc=20, user={subscribed=null, suspended=null}, txid=null, conf={status=null, description=null, portedMcc=null, portedMnc=null}}
+Response from verifyOtp service: {reason=ﻊﻓﻭﺍً! OTP ﻻ ﻲﺘﻃﺎﺒﻗ, status=failed}
+
+
+
+
+
+
+
+

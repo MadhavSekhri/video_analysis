@@ -1,0 +1,546 @@
+To DO 12 June:
+
+-Change Urls DONE
+-Installing everything on server
+-libyana text change
+-libyaana configure why getting slower
+
+
+TO DO 13 June:
+-Zain Iraq 2 numbers with same billing status goin through different flow
+-Mtn Zambia topup not receiving
+
+
+To DO 16 June:
+-Coolclub setup
+-Zain Libyana 30 serving not 1 each day
+-generic way to upload quiz & didyouknow
+-to clear entry generic
+-Bulk upload sorted(failed case)
+-Bulk upload S3
+-Put in Excel database for tiffin
+
+
+20 June TODO:
+
+
+1. Coolclub response getting empty from CMS DONE
+2. Comics category addition DONE
+3. Handling of Single Video by either of resolution DONE
+4. Migration of existing coolclub data to AIS Thailand DONE
+
+5. S4W 2.0 question sheet prepare in format of CMS
+6. S4W 2.0 Questions upload
+7. S4W 2.0 text changes in spanish
+8.Tomcat PID getting autoKilled DONE
+
+
+
+21 June TODO:
+
+1. Swipe4win libyana monthly
+2. Migration of existing coolclub data to AIS Thailand on same domain
+3. S4W 2.0 question sheet prepare in format of CMS
+4. S4W 2.0 Questions upload
+5. S4W 2.0 text changes in Spanish DONE
+6. Swipe4win Vodacom Tanzania
+
+
+
+24June ToDO:
+-S4W Vodacom Tanzania 
+-S4W Zain Libyana
+-KT discussion for 2.0 with Omveer
+
+
+
+1 July 2024:
+-Discussion with Omveer
+-Vodatanzania changes
+-Zain Iraq HE
+-Questions Upload code optimization
+-logs addition to mcb script
+
+
+10July 2024:
+-VPN Connect
+-Share Sample for MTN Edu portal Demo
+
+-Verify and test Questions Upload with Omveer
+-Setup
+ 3 separate systems for 2.0, Zambia and sandbox
+-Sri Lanka swipe4win -WAP & redirection discussion
+-Code Separate 2.0 from S4W
+
+
+OFFICE::
+Priority:
+4. Questions upload for 2.0
+9. New operator setup automate
+
+TODO:
+1. text change automation
+2. set change length
+3. entry clear by key value logic
+4. Command for taking big DP dump "excluding"
+.any json crud for FE
+.separate logs for each operator
+
+HOLD:
+7. Zambia mails coming
+8. Questions automate --OMVEER
+-Serverless acrhitecture(AMIT SIR)
+
+
+DONE/SKIP
+5. libyana changes for monthly pack 
+6. Zain Iraq HE
+
+
+
+11july
+TO DO before tomcat restart:
+1.sync omveer code
+2.enable check for questions without encoding for this op
+3.2.0 code base separate
+
+3.whitelist domain
+
+
+
+/digitalWeb/shellScripts/swipe4win-alert-create-template-scripts/sandbox-question.sh
+/digitalWeb/shellScripts/swipe4win-alert-create-template-scripts/sandbox-set.sh
+
+Ongoing Tasks(For amit sir call12july):
+
+-Mobitel Srilanka (new project)
+-Text Change platform (for handover)
+-Swipe4win and 2.0 codebase separate
+-Spanish demo under review (If anything comes)
+-Vodatanzania,mtn zambia
+
+
+
+12July 2024:
+answer_mobitel_srilanka, event_mobitelsrilanka, user_mobitel_srilanka, sessions_mobitel_srilanka ,operators_mobitel_srilanka, packs_mobitel_srilanka
+
+
+
+
+17July 2024:
+-TTU scripts stopping frequently
+-Images not displaying in demov9
+-Questions response not coming correctly for demov9(in case of languages where question not present)
+-setup system for Zambia 2.0
+-2.0 images assets change
+
+
+Changes to tell (19 July 2024 in amit sir call)
+
+-SriLanka mobitel deliver(subscription & redirection pending)
+-2.0 Spanish demo minor changes
+-Demo account minor things(questions not coming)
+-Text change platform
+-Facts upload swipe4win(code optimization)-with Omveer
+
+
+
+
+
+
+
+
+Changes to tell( in amit sir call)
+
+-Issue is zain Iraq S4W(one direct Ip connectivity ban, one SMS message double encoding)
+
+-SriLanka Mobitel(Billing,Operator redirection Pending) --once we will receive
+
+-AWCC TTU script stop server(logs share --pending)
+
+-Swipe4quiz Telecubes 
+
+-Text updation s4w:
+-Updating all texts
+-Take backup for any change
+-We are authenticating also who can make change(like one passkey is there)-- muthu_bizOps_{hash}
+-Tracking & Logs who made changes in this live portal
+-Also GUI Create basic alignments CSS php
+-Api integration
+-Only pending thing is modal texts,FAQ,Terms and conditions Front end(integrate backend)
+
+
+-CMS url updation(AIS Thailand)
+
+29 July 2024
+-mongo socket connection issue at 23
+-Configuration for callback port
+-TTU script error for AWCC
+
+
+30 July 2024
+-Connect with Rishabh & Rohan for CMS
+-Verify callback for Zambia s4w on new setup
+-80 port connectivity on 23server
+
+Others:
+-VPN setup
+-Orange Tunisia discussion
+
+
+31 July 2024
+Leave
+
+1 August 2024
+-optimize Url updation in CMS(making it configurable)
+-Swipe4Win srilanka mobitel Subscription flow
+
+2 August 2024
+-Zain Iraq S4W
+-CMS url change(sandbox)
+-CMS content url configurable from application properties
+
+3August 2024
+Saturday
+
+4August 2024
+Sunday
+
+5 August 2024
+-S4W SriLanka Mobitel Discussion
+-S4W Zain Iraq 
+
+7 August 2024
+-S4W MTN Zambia 
+-S4W SriLanka Mobitel 
+-S4W VodaTanzania Async(Discussion)
+-CMS migrate old domain content to new
+-CMS Call & Testing
+
+
+
+
+Pending:
+-Encoding at both steps
+-Allowing only those users in whitelistUser_array
+-Add logs with username
+-Integration with GUI
+-push on server
+
+
+Pending things SriLanka Mobitel:
+-T&C, F&Q, Privacy Policy
+-Miro changes:
+  OTP screens to be added in miro
+  MSISDN entering screen to be added in miro
+-OTP api
+-Billing Checksubscription api
+
+Changes to tell( in amit sir call) 2 August 2024
+-TTU script error for AWCC
+-Swipe4Win srilanka mobitel Subscription flow
+-Swipe4quiz Telecubes 
+-Zain Iraq Issues:
+ -SMS double encryption
+ -Url update
+ -Flow change(if already subscribed, donot create and push OTP)
+
+
+9 AUGUST WEEKLY CHNAGES MEET
+
+S4W zain Iraq
+-url change
+-Encoding
+-FLow change(active)
+-Active state(allow for demo)
+
+S4W Orange Egypt
+-Images not displaying
+
+S4W Mobitel
+-Discussion
+
+S4W Mtn Zambia callback
+
+for AWCC TTU
+-Script error
+
+CMS points:
+-Sandbox setup create
+-url configurable 
+-Single upload bulk upload (name not mandatory)
+-Testing with Omar
+
+
+
+RISHAV CONNECT FORMAT
+-
+
+2 September 2024
+-Scrum
+-Education structure revised Discussion
+-Education Portal schema documentation 
+-S4W Orange Tunisia(New depl) 
+
+
+3 September 2024
+-Scrum
+-moov chad magic voice meeting
+
+-S4W MTN Zambia data fetch & share:
+Day wise count of users 
+MSISDN list with total questions played
+Correct answers in a month
+
+-S4W Orange Tunisia(New depl) 
+
+-S4W Mobitel Srilanka(New depl) 
+
+
+
+31 October 2024:
+Holiday
+
+1 November 2024:
+-Mongo issue on .23 server
+-Christianity Discussion with simran
+-S4W MTN Zambia Migrated verified questions from sandbox to live
+-S4W addition of new questions for particular users (have subscription but need to clear previous questions)
+
+2 November 2024:
+Saturday
+
+3 November 2024
+Sunday
+
+4 November 2024:
+Leave
+
+5 November 2024:
+-Tomcat port Issue(publically domain access)
+-101 Migration discussion  
+-101 Migrated content zip
+-Christianity Response changes as discussed with Simran
+-Christianity content uploaded and serving from s3
+-S4W MTN Zambia user stats share
+
+
+Swipe4win
+Swipe4win 2.0
+CMS
+MTN Education portal
+Magic voice
+
+
+This weeks Tasks:
+-MTN Zambia SMS question addition logic to sync (changed from Mongo insertion & schedular) 
+-MTN Zambia Clear Existing questions & display only 300 new questions
+-Monitoring in all modules(CMS, S4W, Mongo on particular servers)
+
+Swipe4win Questions Task:
+-Script for sharing all running questions Answers for Swipe4win along with Images
+-Script for updating wrong text and answer options wrt image  
+
+MinorTasks:
+-Checksub, subscribe port change for Zain Iraq
+-Topup limit change for Zambia
+-Magic Voice Text change
+-Magic Voice Responses minor changes
+
+
+PAST WEEK Tasks(written on 25 NOV 2024):
+
+-Swipe4win MTN Congo Gains Check only on Active status (APP-811)
+-Swipe4win MTN Congo Gains Usage Data Shared (APP-817)
+-EVA Landing Page (APP-789)
+   -Contact Us Email Push
+   -Kanhaiya Email Integration
+   -Industry check added
+   -Email to both user and sales(Try Eva Case)
+   -Telecom flow different than rest
+-Moovchad Magicvoice call not connecting (APP-828)
+
+Minor Tasks:
+-CMS coolclub Modules down
+-Diva Tomcat separate
+-Nagios configuration change (on 23 server)
+
+Upcoming Projects (Only Requirements Discussed Yet)
+- Swipe4Quiz Safaricom Kenya (APP-834)
+- Diva Zain Iraq (APP-826)
+
+
+as on 20Dec 2024-not shared
+1.ZainIraq Diva
+2.Swipe4win Safaricom Kenya
+3.MTN ZAMBIA score mismatch
+4.Swipe4win Zainlibyana
+5.EVA Email changes(cc bcc)
+6.Swipe4win usage share
+7.CMS KT to Ravi
+8.101 Migration -In Progress
+
+
+
+23 Dec, 2024
+-Daywise usage stats for S4W Zambia
+-EVA report usage fetch- logs
+-Swipe4win ZainLibyana login debug
+-EVA detailed logs addition
+
+
+-------------------------------------------------------
+
+2 Jan 2025
+-CMS detailed discussion 
+     -Domains working & old backups removal
+     -Current working points listing
+     -Project migration points
+-EVA data usage share(from logs in excel)
+-DareToKnow flow issue(wrong apis call)
+-DIVA Zain Iraq Elastic Events & Promotional flow
+
+3 Jan 2025
+-CMS Discussion
+    -Document Apis & DB structure
+-.23 disk space 
+-DIVA Zain Iraq Elastic Events & Promotional flow
+-Swipe4win2.0 demo
+    -questions not coming
+    -after attempt msisdn & otp screen coming 
+
+3 Jan 2025
+Saturday
+
+4 Jan 2025 
+Sunday
+
+5 Jan 2025
+Leave
+
+6 Jan 2025
+-Diva Text change
+-Diva Zain Iraq Promotional flow
+-Diva Debug with Shivangi(SubscribeJoinWithParams)
+-CMS Discussion
+-Swipe4win 2.0 questions demo
+
+7 Jan 2025
+-Diva Text change
+-Diva Zain Iraq Promotional flow
+-Diva Debug with Shivangi issues
+-CMS Discussion-HOLD
+-Swipe4quiz questions
+-Swipe4win 2.0 questions demo
+-Swipe4win alert warnings
+
+8 Jan 2025
+-CMS Discussion
+-Swipe4win alert warnings
+-Swipe4win ZainLibyana flow change
+-Swipe4win Safaricom Kenya debugging(with Anjali)
+
+9 Jan 2025
+
+-Connex call flow change ZainLibyana DareToknow
+-Diva Zain Iraq Promotional flow
+
+
+10 Jan 2025
+-Internal call flow change ZainLibyana DareToknow
+-EVA LP perplexity api bypass
+-MTN Zmb S4W change sync with ravi
+-Swipe4win 2.0 questions demo
+
+
+17 Jan 2025
+-MTN Zambia price parameter debug(Billing)
+-Zainlibyana Swipe4win discussion
+-CMS flow & code iteration
+
+18 Jan 2025
+-Safaricom Kenya Redirection issue debug
+
+1 April 2025:
+-.23 server space
+-DIVA Request verification via websockets
+-Livexgames game,category,user Usage discussion with Omveer
+
+2 April 2025:
+-LivexGames
+
+3 April 2025:
+-Connect With Chetan Aryan for Diva Chat Debugging
+-Livexgames
+
+4 April 2025:
+-Diva Zain Iraq
+-Livexgames
+-S4W MTN ZMB subscription req 
+-BNG Website Resume submission & push mail to HR team
+
+5 April 2025:
+-BNG Website
+    -Maintain track of resume and candidates responses 
+    -Email push to HR team with pdf
+
+-Channelwise and action wise filter maintaining in both tryEva and ContactUs apis
+
+-Diva Zain Iraq Logs & DIscussion with shivangi
+
+-S4W MTN ZMB subscription count req 
+
+6 April 2025:
+
+
+
+-----
+
+-Submit Q1 Report
+-Submit 2024-25 Report
+-DareToKnow new subscription changes(allowing 1 case in unsub code)
+-DareToKnow testing with Operations, Sujata & Prashant
+-Stuck CORS & Whitelist for allowed all
+-Share 10 Days data for S4W Zambia
+-IVA Token changes
+-IVA screentext & Assets change
+-Diva chat issue debug with Chetan,Rishav
+-CCI call
+-.23 Server space issue
+
+
+21 April:
+-IVA Checksub change
+-IVA 3 assets change	
+-IVA masterotp addition
+-DareToKnow reactivation flow change
+-CCI call
+-DareToKnow unsub validity expired allow change
+-Addition of 1 more email in Nexiva
+
+
+22 April:
+-Diva K&C signature 
+-CCI Deployment
+-S4W checksub one validation added
+-Daretoknow login,login confirm change
+-IVA
+-Zain Iraq Daretoknow flow discussion with omveer
+-Share 10 Days data for S4W Zambia
+
+23 April:
+LEAVE
+Daretoknow
+
+24 April:
+-Daretoknow new changes
+-Daretoknow Testing
+-Zain Kuwait Diva
+
+25 April:
+-Diva Minutes of usage send in checksub
+-Daretoknow
+
+
+
+
